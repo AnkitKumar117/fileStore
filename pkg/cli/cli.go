@@ -132,7 +132,7 @@ func WordCount() {
 
 func FreqWords(limit int, order string) {
 	queryParam := url.Values{}
-	queryParam.Add("order", "asc")
+	queryParam.Add("order", "dsc")
 	queryParam.Add("limit", strconv.Itoa(10))
 	if len(os.Args) > 2 {
 		queryParam.Set("limit", strconv.Itoa(limit))

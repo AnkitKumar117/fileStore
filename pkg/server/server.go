@@ -223,7 +223,7 @@ func wordsFreq(limit int, flag string) (map[string]int, error) {
 				break
 			}
 		}
-	} else if flag == "desc" {
+	} else if flag == "dsc" {
 		sort.Slice(keys, func(i, j int) bool {
 			return wordsCount[keys[i]] > wordsCount[keys[j]]
 		})

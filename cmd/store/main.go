@@ -11,14 +11,6 @@ import (
 const A_ADD, A_LIST, A_REMOVE, A_UPDATE, A_WC, A_FREQ_WORDS = "add", "ls", "rm", "update", "wc", "freq-words"
 
 func main() {
-	/*
-		store add file1.txt file2.txt, --> working fine
-		store ls, --> DONE
-		store rm file.txt, --> DONE
-		store update file.txt, --> done
-		store wc, --> DONE
-		store freq-words [--limit|-n 10] [--order=dsc|asc]   |--> DONE -- check order once
-	*/
 	wcCommand := flag.NewFlagSet("wc", flag.ExitOnError)
 	lsCommand := flag.NewFlagSet("ls", flag.ExitOnError)
 	rmCommand := flag.NewFlagSet("rm", flag.ExitOnError)
